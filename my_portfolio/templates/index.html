@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhosh Rajasekar's Portfolio</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styling for the boxes */
+        .box {
+            background: #222; /* Dark background for boxes */
+            color: #ddd; /* Light gray text color */
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: 10px auto;
+            border-radius: 7px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+            transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+        }
+        .box:hover {
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Deeper shadow on hover */
+        }
+        .logo {
+            max-width: 180px;
+            padding-right: 10px;
+        }
+        .box .text {
+            margin-left: 20px;
+        }
+        .text .heading {
+            max-width: 300px;
+            font-size: 27px;
+            color: #ff9800; /* Orange heading color */
+        }
+        .text p {
+            color: #bbb; /* Gray text color */
+        }
+        .text a {
+            color: #ff9800; /* Orange link color */
+        }
+        .bg-custom {
+            background-color: #333; /* Dark background for navbar */
+        }
+        .bg-custom-light {
+            background-color: #444; /* Lighter dark background for sections */
+        }
+        .btn-custom {
+            background-color: #110f0d; /* Orange color for buttons */
+            color: white;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+        }
+        .btn-custom:hover {
+            background-color: #e68a00; /* Darker orange color on hover */
+            transform: scale(1.05); /* Slightly enlarge button on hover */
+        }
+        .btn-custom:active {
+            background-color: #cc7a00; /* Even darker orange on click */
+            transform: scale(1.02); /* Slightly shrink button on click */
+        }
+        .btn-contact {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: #ff9800;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            text-decoration: none;
+            margin: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-contact img {
+            max-width: 20px;
+            margin-right: 10px;
+        }
+        .btn-contact:hover {
+            background-color: #e68a00;
+            transform: scale(1.05);
+        }
+        .btn-contact:active {
+            background-color: #cc7a00;
+            transform: scale(1.02);
+        }
+        .contact-card {
+            background: #333;
+            border: none;
+            border-radius: 10px;
+            color: #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: box-shadow 0.3s ease;
+        }
+        .contact-card:hover {
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        .contact-card .card-body {
+            display: flex;
+            align-items: center;
+        }
+        .contact-card .icon {
+            font-size: 30px;
+            color: #ff9800;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Horizontal Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-custom">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Santhosh Rajasekar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#internship">Internship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="py-5 bg-custom-light">
+        <div class="container text-center">
+            <img src="santhosh.jpg" alt="Your Photo" class="img-fluid rounded-circle mb-3" style="max-width: 400px; height: 400px;">
+            <h1 style="color: #ff9800;">Santhosh Rajasekar</h1>
+            <p>Web Developer | Designer | AI Engineer</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hey, I’m Santhosh Rajasekar, a final-year student at St. Joseph’s College of Engineering, specializing in Electronics and Communication. Throughout my academic adventure, I’ve tinkered with circuits, unraveled the secrets of signals, and danced with electrons. Whether it’s designing a low-power IoT device or optimizing an antenna array, count me in! Late-night coding sessions? Check. Curiosity that borders on obsession? Double-check. And as for coffee—well, let’s just say it’s my trusty sidekick in this tech adventure. As I step toward graduation, I’m eager to contribute my fresh perspective, collaborate with industry wizards, and soak up knowledge like a sponge.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-custom-light py-5">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box">
+                        <div class="text">
+                            <div class="heading h4">Project 1</div>
+                            <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="https://github.com/yourusername/project1" target="_blank" class="btn btn-custom">Visit GitHub Repo</a>
+                        </div>
+                        <div class="logo pull-right">
+                            <img src="project1.jpg" alt="Project 1 Logo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box">
+                        <div class="text">
+                            <div class="heading h4">Project 2</div>
+                            <p>This project demonstrates a parking slot detection system using image processing techniques in MATLAB</p>
+                            <a href="https://github.com/rsanthosh04/Smart_Parking_using_Image_Processing" target="_blank" class="btn btn-custom">Visit GitHub Repo</a>
+                        </div>
+                        <div class="logo pull-right">
+                            <img src="smart_parking_logo.jpeg" alt="Project 2 Logo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="box">
+                        <div class="text">
+                            <div class="heading h4">Project 4</div>
+                            <p>Description of Project 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="https://github.com/rsanthosh04/IMAGE_CLASSIFICATION" target="_blank" class="btn btn-custom">Visit GitHub Repo</a>
+                        </div>
+                        <div class="logo pull-right">
+                            <img src="project4.jpg" alt="Project 4 Logo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box">
+                        <div class="text">
+                            <div class="heading h4">Mazebot Adventure</div>
+                            <p>An Arduino-powered robot that navigates mazes, solving twists and turns with sensors and clever algorithms</p>
+                            <a href="https://github.com/rsanthosh04/Mazebot_using_Arduino" target="_blank" class="btn btn-custom">Visit GitHub Repo</a>
+                        </div>
+                        <div class="logo pull-right">
+                            <img src="mazebot.jpeg" alt="Project 3 Logo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+               
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internship" class="py-5">
+        <div class="container">
+            <h2>Internship Experience</h2>
+            <div class="box">
+                <div class="text">
+                    <div class="heading h4">Embedded AI at L&T technologies Services</div>
+                    <p>I’m excited to share that I recently completed a one-month internship at L&T Technology Services. During this enriching journey, I immersed myself in the fascinating realms of Embedded Systems and AI. From hands-on projects to valuable industry insights, it was a whirlwind of learning. Grateful for the mentorship received, I’m now eager to carry this newfound knowledge forward!</p>
+                    <a href="https://drive.google.com/file/d/1048kBYeLfCQRLPMoN_feuJMaQndB4t3E/view?usp=drive_link" target="_blank" class="text-light">My Certificate</a>
+                </div>
+            </div>
+            <div class="box mt-3">
+                <div class="text">
+                    <div class="heading h4">IoT Exploration Journey in Barola Technologies</div>
+                    <p>During a 15-day Internet of Things (IoT) internship via an online platform, I delved into sensor networks, data visualization, and real-time applications. Thrilled to apply my theoretical knowledge to practical scenarios and eager for what lies ahead!</p>
+                    <a href="https://drive.google.com/file/d/1loLkV2k3R8MqaZU8YeLAwlUy1VldrWka/view?usp=drive_link" target="_blank" class="text-light">My Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-custom-light">
+        <div class="container">
+            <div class="card contact-card mb-3">
+                <div class="card-body">
+                    <span class="icon">in</span>
+                    <div>
+                        <p class="mb-0">LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/santhosh-rajasekar/" target="_blank" class="text-light">Santhosh Rajasekar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card contact-card">
+                <div class="card-body">
+                    <span class="icon">&#x1F4C4;</span>
+                    <div>
+                        <p class="mb-0">Resume</p>
+                        <a href="https://drive.google.com/file/d/1U3DZ73srmFSkTUTWECXDiF3YANbdcOSS/view?usp=drive_link" target="_blank" class="text-light">View My Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JavaScript scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
